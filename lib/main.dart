@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tess_flutter/string/string.dart';
-import 'package:tess_flutter/variabel_universal/login.dart';
+import 'package:tess_flutter/increment_decrement/increment.dart';
+import 'package:tess_flutter/operator_logika/hasil.dart';
+import 'package:tess_flutter/operator_logika/nilai.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Login(),
+      home:  NilaiPage(),
     );
   }
 }

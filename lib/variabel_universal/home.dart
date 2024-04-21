@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:tess_flutter/variabel_universal/login.dart';
 
 class Home extends StatefulWidget {
-  final String vFirstName;
-  final String vLastName;
-  const Home({Key? key, required this.vFirstName, required this.vLastName})
+  final String vFirstNameHome;
+  final String vLastNameHome;
+  const Home({Key? key, required this.vFirstNameHome, required this.vLastNameHome})
       : super(key: key);
 
   @override
@@ -22,10 +22,10 @@ class _HomeState extends State<Home> {
             // cara yg salah. hasilnya akan = home.vUserName
             Text('Halo, $widget.vFirstName $widget.vLastName'),
             // normal
-            Text('Halo, ${widget.vFirstName} ${widget.vLastName}'),
+            Text('Halo, ${widget.vFirstNameHome} ${widget.vLastNameHome}'),
             // kapital
             Text(
-                'Halo, ${widget.vFirstName.toUpperCase()} ${widget.vLastName.toUpperCase()} '),
+                'Halo, ${widget.vFirstNameHome.toUpperCase()} ${widget.vLastNameHome.toUpperCase()} '),
 
             ElevatedButton(
                 onPressed: () {

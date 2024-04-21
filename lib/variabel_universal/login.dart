@@ -20,7 +20,7 @@ class _LoginState extends State<Login> {
     Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => Home(vFirstName: vFirstName,vLastName: vLastName,),
+          builder: (context) => Home(vFirstNameHome: vFirstName,vLastNameHome: vLastName,),
         ));
   }
 
