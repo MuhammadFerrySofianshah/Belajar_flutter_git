@@ -2,8 +2,10 @@ import 'dart:js_interop';
 
 import 'package:flutter/material.dart';
 
+// list mirip dengan set, tetapi jika datanya sama list bisa menginput 3 datanya sedangkan set hanya 1 datanya.
 // link tutorial list
 // erico: https://youtu.be/QSpSKTcR44s?si=b8iuwYd3dNhXUlMI
+// membuat fitur tambah data dan hapus data.
 class ListPage extends StatefulWidget {
   const ListPage({super.key});
 
@@ -12,10 +14,12 @@ class ListPage extends StatefulWidget {
 }
 
 class _ListPageState extends State<ListPage> {
-  // fitur tambah data dan hapus data.
+  // memulai urutan dari angka 1
   int counter = 1;
+  // membuat listnya
   var listName = <Widget>[];
 
+  // function untuk menambahkan data
   void tambahData() {
     setState(() {
       listName.add(Text('Data ke - $counter'));
@@ -23,6 +27,7 @@ class _ListPageState extends State<ListPage> {
     });
   }
 
+  // function untuk menghapus data
   void hapusData() {
     setState(() {
       if (listName.isNotEmpty) {
