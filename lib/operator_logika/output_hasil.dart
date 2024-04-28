@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tess_flutter/operator_%20logika/input_nilai.dart';
+import 'package:tess_flutter/operator_logika/input_nilai.dart';
 
 class OutputHasilPage extends StatefulWidget {
   final int nilaiKamu;
