@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tess_flutter/increment_decrement/increment.dart';
 import 'package:tess_flutter/list/list.dart';
+import 'package:tess_flutter/null/null_input.dart';
 import 'package:tess_flutter/operator_logika/input_nilai.dart';
 
 void main() {
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: InputNilaiPage(),
+      home: const NullInput(),
     );
   }
 }

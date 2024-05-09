@@ -51,7 +51,7 @@ class _NilaiPageState extends State<InputNilaiPage> {
     //  Jika menggunakan ||, tidak akan berfungsi karena variabel tidak dapat dievaluasi secara sendiri.
     // Jika menggunakan &&, akan berfungsi karena variabel dievaluasi secara bersamaan.
     if (ubahStringToInt >= 0 && ubahStringToInt <= 100) {
-      Navigator.pushReplacement(
+      Navigator.pushReplacement(  
           context,
           MaterialPageRoute(
             builder: (context) => OutputHasilPage(
