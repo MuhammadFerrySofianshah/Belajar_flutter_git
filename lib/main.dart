@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tess_flutter/for/for_list.dart';
 import 'package:tess_flutter/increment_decrement/increment.dart';
 import 'package:tess_flutter/list/list.dart';
 import 'package:tess_flutter/null/null_input.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const NullInput(),
+      home: const ForList(),
     );
   }
 }
