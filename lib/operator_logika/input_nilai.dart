@@ -17,7 +17,6 @@ class _NilaiPageState extends State<InputNilaiPage> {
     String inputNilai = nilaiController.text;
 
     if (inputNilai.isEmpty) {
-      // jika kosong tidak ada interaksi
       showDialog(
         context: context,
         builder: (context) => const AlertDialog(title: Text('Data Kosong')),
