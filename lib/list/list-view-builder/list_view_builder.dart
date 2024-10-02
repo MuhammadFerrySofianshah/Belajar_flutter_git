@@ -1,18 +1,22 @@
+// ? Penjelasan ListView.builder
+// Deskripsi: Membuat list dinamis, item hanya dirender sesuai kebutuhan.
+// Kapan digunakan : List yang sangat panjang atau ketika jumlah item tidak diketahui secara pasti.
+/* 
+- list mirip dengan set, tetapi jika datanya sama list bisa menginput 3 datanya sedangkan set hanya 1 datanya.
+- link tutorial list
+- erico: https://youtu.be/QSpSKTcR44s?si=b8iuwYd3dNhXUlMI (membuat fitur tambah data dan hapus data).
+ */
 
 import 'package:flutter/material.dart';
 
-// list mirip dengan set, tetapi jika datanya sama list bisa menginput 3 datanya sedangkan set hanya 1 datanya.
-// link tutorial list
-// erico: https://youtu.be/QSpSKTcR44s?si=b8iuwYd3dNhXUlMI
-// membuat fitur tambah data dan hapus data.
-class ListPage extends StatefulWidget {
-  const ListPage({super.key});
+class ListViewBuilder extends StatefulWidget {
+  const ListViewBuilder({super.key});
 
   @override
-  State<ListPage> createState() => _ListPageState();
+  State<ListViewBuilder> createState() => _ListViewBuilderState();
 }
 
-class _ListPageState extends State<ListPage> {
+class _ListViewBuilderState extends State<ListViewBuilder> {
   // memulai urutan dari angka 1
   int counter = 1;
   // membuat listnya
@@ -22,7 +26,7 @@ class _ListPageState extends State<ListPage> {
   void tambahData() {
     setState(() {
       listName.add(Text('Data ke - $counter'));
-      counter++;
+      counter++; 
     });
   }
 
@@ -46,7 +50,7 @@ class _ListPageState extends State<ListPage> {
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
+            children: [ 
               ElevatedButton.icon(
                   onPressed: tambahData,
                   icon: const Icon(Icons.add),

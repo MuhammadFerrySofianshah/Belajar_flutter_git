@@ -1,7 +1,7 @@
 // ignore_for_file: non_constant_identifier_names
 
 import 'package:flutter/material.dart';
-import 'package:tess_flutter/operator_logika/output_hasil.dart' ;
+import 'package:belajar_flutter_git/operator_logika/output_hasil.dart' ;
 
 class InputNilaiPage extends StatefulWidget {
   final nilaiController = TextEditingController();
